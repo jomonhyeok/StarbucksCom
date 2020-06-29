@@ -1,0 +1,133 @@
+a{text-decoration: none; color: black;}
+hr{margin: 0; width: 60px; height: 3px; border: none;}
+input[type="checkbox"]{display: none;}
+body *{font-size: 18px; word-break: keep-all;}
+header ol li, section.value div.wrap div.textList ol li h3, section.value div.wrap div.textBox ul li dl dd:last-of-type, section.goal div div.wrap ul li p{font-family: 'Noto Sans KR'; font-weight: 500;}
+header div.title h2, section h2, section.vision div.wrap figure, section.goal div div.wrap div.goalButton, header div.menu ol li h3{font-family: 'Spartan';}
+header div.menu nav ul li{font-family: "Santana-Black";}
+b{font-family: "Santana-Bold";}
+/* font */
+header{margin-top: 120px; background: url(../companyimg/companybg.png) no-repeat; height: 420px; position: relative;}
+header div.menu{border-bottom: 1px solid #888; height: 120px; line-height: 120px; width: 100%; position: fixed; top: 0; background-color: white; z-index: 10;}
+header div.menu nav{width: 1200px; margin: 0 auto; position: relative;}
+header div.menu nav > ul{display: flex; justify-content: space-between; height: 120px;}
+header div.menu nav > ul li:nth-of-type(4){padding-top: 15px;}
+header div.menu nav > ul li:not(:nth-of-type(4)){padding-top: 15px; cursor: pointer; transition: 0.3s;}
+header div.menu nav > ul li:not(:nth-of-type(4)):hover{color: #e60012; border-bottom: 4px solid #e60012; transition: 0.3s;}
+header div.menu nav > ul li h1 a img{width: 90px;}
+header div.menu nav div.login{position: absolute; right: 0; top: -40px; height: 80px;}
+header div.menu nav div.login a{font-size: 14px; color: #888;}
+
+header div.menu div.moreMenu{width: 100%; background-color: white; box-shadow: 0px -3px 10px 0px black inset; height: 0px; transition: 1s;}
+header div.menu div.moreMenu.active{height: 200px; transition: 0.5s; }
+header div.menu div.moreMenu ol{position: relative; width: 1200px; height: 100%; margin: 0 auto;}
+header div.menu div.moreMenu ol > li{display: flex; align-items: center; width: 100%; position: absolute; height: 0; transition: 0.5s; opacity: 0; visibility: hidden;}
+header div.menu div.moreMenu ol > li.active{height: 200px; transition: 0.5s; opacity: 1; visibility: visible;}
+header div.menu div.moreMenu ol li div{width: 50%; height: 100%;}
+header div.menu div.moreMenu ol li:nth-of-type(n-4) div:nth-of-type(2){text-align: center; border-left: 1px solid #e5e5e5; height: 80%;}
+header div.menu div.moreMenu ol li:nth-of-type(n+4) div:nth-of-type(1){text-align: center; border-right: 1px solid #e5e5e5; height: 80%;}
+header div.menu div.moreMenu ol li:nth-of-type(n+4) div:nth-of-type(2){text-align: left; }
+header div.menu div.moreMenu ol li h3{font-size: 14px; height: 50px;}
+header div.menu div.moreMenu ol li div ul li a{font-size: 22px;}
+header div.menu div.moreMenu ol li div ul{display: flex;}
+header div.menu div.moreMenu ol li div ul li{margin-right: 30px;}
+header div.menu div.moreMenu ol li div img{width: 65%; margin-top: 10px; transform: translateY(-30px); opacity: 0;}
+header div.menu div.moreMenu ol li div img.active{animation-name: TopMenuImg; animation-delay: 0.3s; animation-duration: 0.7s; animation-iteration-count: 1; animation-fill-mode: forwards;}
+@keyframes TopMenuImg{
+    0%{
+        transform: translateY(-30px); opacity: 0;
+    }
+    30%{
+        transform: translateY(60px); opacity: 0.3;
+    }
+    50%{
+        transform: translateY(0px); opacity: 0.5;
+    }
+    70%{
+        transform: translateY(30px); opacity: 0.7;
+    }
+    100%{
+        transform: translateY(0px); opacity: 1;
+    }
+}
+
+header div.title{height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+header div.title hr{margin: 0 auto; height: 3px; background-color: white; margin-bottom: 30px;}
+header div.title h2{font-size: 40px; color: white;}
+
+header > ol{position: absolute; bottom: -35px; display: flex; width: 1200px; left: calc(50% - 600px); height: 70px; line-height: 70px;}
+header > ol li{width: 33.33%; text-align: center; background-color: white; border: 1px solid black; cursor: pointer;}
+header > ol li:first-of-type{border-radius: 35px 0 0 35px;}
+header > ol li:last-of-type{border-radius: 0 35px 35px 0;}
+header > ol li.active{background: url(../companyimg/headermenubg.png) no-repeat; background-size: cover; color: white;}
+
+section h2{font-size: 30px; margin-bottom: 30px;}
+section hr{background-color: black; margin-bottom: 50px;}
+
+section.vision{margin: 185px auto 150px auto; width: 1200px;}
+section.vision div.wrap{display: flex; justify-content: space-between; color: white;}
+section.vision div.wrap figure{height: 400px; width: 530px; position: relative;}
+section.vision div.wrap figure:hover figcaption::before,section.vision div.wrap figure:hover figcaption::after{opacity: 1; transform: scale(1);}
+section.vision div.wrap figure figcaption{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+section.vision div.wrap figure figcaption::before,section.vision div.wrap figure figcaption::after{position: absolute; opacity: 0; top: 30px; bottom: 30px; left: 30px; right: 30px; content: ''; transition: 0.5s; }
+section.vision div.wrap figure figcaption::before{border-top: 1px solid white; border-bottom: 1px solid white; transform : scale(0,1)}
+section.vision div.wrap figure figcaption::after{border-right: 1px solid white; border-left: 1px solid white; transform : scale(1,0)}
+section.vision div.wrap figure figcaption div{display: flex; flex-direction: column; align-items: center; text-align: center;}
+section.vision div.wrap figure figcaption div h3{font-size: 24px; padding-top: 170px; transition: 0.5s; margin-bottom: 30px;}
+section.vision div.wrap figure figcaption div p{width: 450px; opacity: 0; transform: translateY(30px); transition: 0.5s; line-height: 28px;}
+section.vision div.wrap figure:hover figcaption div h3{padding-top: 190px; transition: 0.5s;}
+section.vision div.wrap figure:hover figcaption div p{transform: translateY(0); opacity: 1; transition: 0.5s;}
+section.vision div.wrap figure:nth-of-type(1){background: url(../companyimg/companyVision01.png) no-repeat left top;}
+section.vision div.wrap figure:nth-of-type(2){background: url(../companyimg/companyVision02.png) no-repeat left top;}
+/* vision fin */
+section.value{position: relative;}
+section.value::before{content: ''; display: block; height: 350px; background-color: #e60012; width: 35%; position: absolute; right: 0; bottom: -50px; z-index: -1;}
+section.value > div{margin: 150px auto; width: 1200px;}
+section.value div div.wrap{display: flex;}
+section.value div div.wrap div.imgBox{width: 28%; height: 492px;}
+section.value div div.wrap div.imgBox ul{position: relative;}
+section.value div div.wrap div.imgBox ul li{position: absolute; left: 0; top: 0; opacity: 0; transition: 0.5s;}
+section.value div div.wrap div.imgBox ul li.active{opacity: 1; transition: 0.5s;}
+section.value div div.wrap div.textList{width: 32%;}
+section.value div div.wrap div.textList ol{padding-top: 35px;}
+section.value div div.wrap div.textList ol li{border-bottom: 3px solid #e5e5e5; height: 60px; line-height: 60px; cursor: pointer;}
+section.value div div.wrap div.textList ol li h3{ padding-left: 40px; position: relative;}
+section.value div div.wrap div.textList ol li h3::before{width: 8px; height: 50px; background-color: #e5e5e5; content: ''; display: block; position: absolute; left: 0; top: 5px; transition: 0.5s; transform: rotate(0);}
+section.value div div.wrap div.textList ol li:hover h3::before{transform: rotateZ(90deg); transition: 0.5s;}
+section.value div div.wrap div.textList ol li.active h3::before{background-color: #e60012;}
+section.value div div.wrap div.textBox{width: 40%; background-color: #e5e5e5; margin-top: 30px; height: 350px; box-shadow: 10px 10px 25px 0px black;}
+section.value div div.wrap div.textBox ul{position: relative;}
+section.value div div.wrap div.textBox ul li{padding: 50px; opacity: 0; transition: 0.5s; position: absolute;}
+section.value div div.wrap div.textBox ul li dl dt{font-size: 16px; color: #e60012; margin-bottom: 30px; transform: translateX(50px); transition: 1s; opacity: 0; }
+section.value div div.wrap div.textBox ul li dl dd:first-of-type{font-size: 24px; font-weight: bold; margin-bottom: 30px; transform: translateX(50px); opacity: 0; transition: 1s;}
+section.value div div.wrap div.textBox ul li dl dd:last-of-type{line-height: 28px; transform: translateX(50px); opacity: 0;}
+section.value div div.wrap div.textBox ul li dl.active dt{opacity: 1; transform: translateX(0px); transition: 1s; }
+section.value div div.wrap div.textBox ul li dl.active dd{opacity: 1; transform: translateX(0px); transition: 1s; transition-delay: 0.2s;}
+section.value div div.wrap div.textBox ul li dl.active dd:last-of-type{opacity: 1; transition-delay: 0.4s;}
+section.value div.wrap div.textBox ul li.active{opacity: 1; transition: 0.5s;}
+
+/* value fin */
+
+
+
+section.goal{position: relative;}
+section.goal::before{content: ''; display: block; height: 370px; background-color: #e5e5e5; width: 70%; position: absolute; left: 0; top: 100px; z-index: -1;}
+section.goal > div{margin: 150px auto; width: 1200px;}
+section.goal div span{font-size: 16px; color: #888; margin-bottom: 20px; display: block;}
+section.goal div div.wrap{position: relative;}
+section.goal div div.wrap::after{content: ''; display: block; visibility: hidden; clear: both;}
+section.goal div div.wrap div.goalButton{position: absolute; right: 15px; top: 285px; display: flex; transform: rotateZ(90deg); transform-origin: right;}
+section.goal div div.wrap div.goalButton p{border-bottom: 2px solid black; padding-bottom: 10px; margin-right: 20px; cursor: pointer;}
+section.goal div div.wrap div.goalButton p.active{border-bottom: 2px solid #e60012; color: #e60012;}
+section.goal div div.wrap ul{float: left; margin-right: 100px; position: relative;}
+section.goal div div.wrap ul li p{width: 400px; line-height: 36px;}
+section.goal div div.wrap ol{position: relative;}
+section.goal div div.wrap li{opacity: 0; visibility: hidden; transition: 0.5s; top: 0;}
+section.goal div div.wrap li.active{opacity: 1; visibility: visible; transition: 0.5s;}
+
+
+
+
+
+
+

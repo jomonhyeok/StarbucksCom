@@ -1,0 +1,12 @@
+@import url(reset.css);
+@import url(global.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Spartan:wght@600;700;800;900&display=swap');
+@font-face{
+    font-family: "Santana-Black";
+    src : url("../font/Santana-Black.ttf")
+}
+@font-face{
+    font-family: "Santana-Bold";
+    src : url("../font/Santana-Bold.ttf")
+}
+/* https://meyerweb.com/eric/tools/css/reset/ */

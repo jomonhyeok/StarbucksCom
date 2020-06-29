@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script><!--jquery cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <!--Semantic UI-->
+    <link rel="stylesheet" href="fullpage/fullpage.min.css">
+    <!-- fullpage.css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> 
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script> 
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/import.css">
+
+    <!-- 모바일 px -> vw  -->
+    <!-- 
+        logo 	company  value  story  menu   reserve  store
+               4 	   2	3      4         2          3
+
+partnership 1
+사이트맵 1
+
+로그인 회원가입
+게시판?
+     -->
+</head>
+<body class="fp-responsive">
+    <header>
+        <h1>
+            <a href="main.html">
+                <img src="images/mainlogo.png" alt="MainLogo">
+            </a>
+        </h1>
+        <nav>
+            <input type="checkbox" id="hamburger">
+            <label for="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">VALUE</a></li>
+                <li><a href="#">STORY</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">RESERVE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="full-page">
+        <div class="section main">
+            <div class="wrap">
+                <p>Eats ,  Always Great!</p>
+                <h2>
+                    We will continue to do our best for 
+                    everyone to experience great taste 
+                </h2>
+            </div>
+            <div class="scroll-down">
+                <i class="big angle double down icon"></i>
+                <span>SCROLL</span> 
+            </div>
+        </div>
+        <div class="section value">
+            <div class="wrap">
+                <div class="left">
+                    <h2>
+                        Our Value, <br> Goal and Vision
+                    </h2>
+                    <div class="shortcut">
+                        <a href="#">스타벅스 소개 바로가기 <span>→</span></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <p>WORK TOGETHER</p>
+                            <span>함께 일하고</span>
+                        </li>
+                        <li>
+                            <p>INTERACT CUSTOMER</p>
+                            <span>고객과 소통하며</span>
+                        </li>
+                        <li>
+                            <p>NURTURE A TALENT</p>
+                            <span>인재를 양성하고</span>
+                        </li>
+                        <li>
+                            <p>GROW TOGETHER</p>
+                            <span>함께 성장하는 스타벅스</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section story">
+            <div class="swiper-container"> 
+                <div class="swiper-wrapper"> <!-- Slides --> 
+                    <div class="swiper-slide slide1">
+                        <div class="wrap">
+                            <img src="images/arabica.png" alt="arabica">
+                            <h3>
+                                최상의 커피는 최상의 원두로부터만 탄생합니다.
+                            </h3>
+                            <p>
+                                스타벅스 아라비카 원두는 일반 아라비카 원두와는 다릅니다.
+                                스타벅스는 당사의 원두가 최상의 품질을 갖추도록
+                                모든 단계에서 최선의 노력을 기울입니다.
+                            </p>
+                            <div class="shortcut">
+                                <a href="#"> COFFEE STORY 바로가기 <span>→</span> </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="swiper-slide slide2">
+                        <div class="wrap">
+                            <h3>
+                                “스타벅스 로스트 스팩트럼은<br> 다년 간의 연구와 장인정신으로 탄생했습니다.”
+                            </h3>
+                            <p>
+                                모든 원두는 온도와 시간이 균형을 이루어야 그 향과 청량감, 바디와 풍미가 최고 수준에 이릅니다.
+                                우리의 커피는 세 가지 로스팅으로 분류됩니다. 
+                                <span><br/>블론드 로스트,  미디엄 로스트,  다크 로스트<br/></span>
+                                고객에게 맞는 풍미와 강도를 쉽게 찾을 수 있습니다.
+                            </p>
+                            <div class="shortcut">
+                                <a href="#"> COFFEE STORY 바로가기<span>→</span> </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="swiper-button-prev button-event">
+                    <div>
+                        Prev
+                    </div>
+                </div>
+                <div class="swiper-button-next button-event">
+                    <div>
+                        Next
+                    </div>
+                </div>
+                <!-- <div class="pointerTest"></div> -->
+            </div>
+        </div>
+        <div class="section menu">
+            <div class="shuffle">
+                <ol>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <i class="big search plus icon"></i>
+                                <input type="button" value="MORE MENU">
+                            </a>
+                            <img src="images/shuffle01.png" alt="shuffle">
+                            <h4>Cold-brew</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <i class="big search plus icon"></i>
+                                <input type="button" value="MORE MENU">
+                            </a>
+                            <img src="images/shuffle02.png" alt="shuffle">
+                            <h4>Cake</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <i class="big search plus icon"></i>
+                                <input type="button" value="MORE MENU">
+                            </a>
+                            <img src="images/shuffle03.png" alt="shuffle">
+                            <h4>Tumbler</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <i class="big search plus icon"></i>
+                                <input type="button" value="MORE MENU">
+                            </a>
+                            <img src="images/shuffle04.png" alt="shuffle">
+                            <h4>Card</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/shuffle05.png" alt="shuffle">
+                            <h4>Frappuccino</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/shuffle06.png" alt="shuffle">
+                            <h4>Bakery</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/shuffle07.png" alt="shuffle">
+                            <h4>Mug</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/shuffle08.png" alt="shuffle">
+                            <h4>Blended </h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/shuffle09.png" alt="shuffle">
+                            <h4>Sandwich</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/shuffle07.png" alt="shuffle">
+                            <h4>Mug</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/shuffle08.png" alt="shuffle">
+                            <h4>Blended </h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/shuffle09.png" alt="shuffle">
+                            <h4>Sandwich</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/mainlogo.png" alt="mainlogo">
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <ul>
+                <li>
+                    <hr/>
+                    <h3>DRINKS</h3>
+                    <p>스타벅스의 특별함을 경험해 보세요</p>
+                </li>
+                <li>
+                    <hr/>
+                    <h3>FOODS</h3>
+                    <p>간편하게 채워지는 만족감을 느껴보세요</p>
+                </li>
+                <li>
+                    <hr/>
+                    <h3>GOODS</h3>
+                    <p>스타벅스 상품으로 즐거움을 선사하세요</p>
+                </li>
+                <li>
+                    <hr/>
+                    <h3>CARD</h3>
+                    <p>따뜻한 커피와 마음을 전하기 좋은 방법</p>
+                </li>
+            </ul>
+        </div>
+        <div class="section reserve">
+            <div class="container">
+                <div class="left">
+
+                </div>
+                <div class="middle">
+                    <div class="top"></div>
+                    <div class="centerCenter">
+                        <img src="images/reserve.png" alt="reserveLogo">
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+                <div class="right">
+
+                </div>
+                <div class="reserveText">
+                    <img src="images/reserve.png" alt="reserveLogo">
+                    <h2>STARBUCKS RESERVE</h2>
+                    <p>차별화된 최상의 스타벅스 경험을 제공합니다.</p>
+                    <p> 
+                        가장 신선한 상태에서 손으로 골라낸 커피는 이 세상에서 
+                        가장 훌륭한 최상의 커피이자,  스타벅스에서 제공하는 특별한 경험입니다. 
+                        각각의 스타벅스 리저브 원두는 고객들을 새로운 커피 여정으로 초대합니다.
+                    </p>
+                    <div class="shortcut">
+                        <a href="index.html"> 스타벅스 리저브™ 바로가기 <span>→</span></a>
+                    </div>
+                </div>
+                <!-- <button class="close">CLOSE</button> -->
+            </div>
+        </div>
+        <div class="section footer">
+            <div class="wrap">
+                <div class="footer_Top">
+                    <div class="footer_left">
+                        <ul>
+                            <li>
+                                <span>1</span>
+                                <h3><a href="#">COMPANY</a></h3>
+                            </li>
+                            <li>
+                                <span>1</span>
+                                <h3><a href="#">COMMUNITY</a></h3>
+                            </li>
+                            <li>
+                                <span>1</span>
+                                <h3><a href="#">PARTNERSHIP</a></h3>
+                            </li>
+                        </ul>
+                        <ol>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="#">스타벅스 소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">뉴스룸</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">세계의 스타벅스</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="#">FACEBOOK</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">TWITTER</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">YOUTUBE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">INSTAGRAM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="footer_right">
+                        <div>
+                            <div class="shortcut">
+                                <a href="#">사이트맵 바로가기 <span>→</span></a>
+                            </div>
+                            <div class="shortcut">
+                                <a href="#">이전 홈페이지 바로가기 <span>→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer_bottom">
+                    <div>
+                        <ul>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">홈페이지 이용약관</a></li>
+                            <li><a href="#">스타벅스 카드 이용약관</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="footer_left">
+                            <p>사업자등록번호 : 201-81-21515 </p>
+                            <p>(주)스타벅스커피 코리아 대표이사 : 송 데이비드 호섭 TEL : 1522-3232</p>
+                        </div>
+                        <div class="footer_right">
+                            <p>Design and coding
+                                by Team Yoo
+                            </p>
+                            <p>
+                                ⓒ 2020 Starbucks Coffee Company. All Rights Reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <i class="large arrow up icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- https://www.youtube.com/watch?v=8kx8Qxsaeb8 -->
+    <script src="fullpage/fullpage.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
